@@ -1,0 +1,36 @@
+口紅機
+lp_v300dfn
+lp_v301dfn
+lp_v302dfn
+
+下樓梯 1~3
+lp_v600slt
+lp_v601slt
+lp_v868slt
+
+
+打地鼠 4
+lp_v600dgb
+lp_v600dgb5m
+lp_v666dgb
+
+大富翁
+lp_v666dfn
+lp_v888dfn
+
+活動頁
+lp_v0105xkyl
+
+account=80000503&accountType=A&quotesColor=1&userToken=1_051d0aaedafe4d28871898d15a011de2
+
+80000022    aaa11111
+80000032    bbb22222
+60192579    ddd44444
+80042862    a123456
+80041787    a123456
+
+
+git init
+git commit -m "first commit"
+git remote add origin https://github.com/fish750710/vue3-H5.git
+git push -u origin master

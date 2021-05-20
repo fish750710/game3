@@ -1,0 +1,919 @@
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-size: 0;
+  font-family: "PingFang SC", "Hiragino Sans GB", arial, "Microsoft Yahei", sans-serif;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.banner {
+  background: url(../img/banner.jpg) no-repeat 0 0/100%;
+  height: 6.3rem;
+  z-index: 1;
+  position: relative;
+}
+
+.banner .bannerTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 765px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: calc(50% - 400px);
+  top: 16%;
+  z-index: 1;
+}
+
+.banner .bannerTop {
+  background: url(../img/people_pc.png) no-repeat center;
+  width: 603px;
+  height: 490px;
+  position: absolute;
+  top: 23%;
+  left: calc(50% - 332px);
+  z-index: 2;
+}
+
+.banner .light {
+  background: url(../img/light.png) no-repeat 0/100%;
+  width: 3.18rem;
+  height: 3.17rem;
+  position: absolute;
+  left: calc(50% + 49px);
+  top: 60%;
+  z-index: 2;
+  -webkit-animation: flashing 1s ease-in-out infinite;
+  animation: flashing 1s ease-in-out infinite;
+}
+
+.banner .badge {
+  background: url(../img/badge.png) no-repeat 0/100%;
+  width: 4.89rem;
+  height: 2.13rem;
+  z-index: 3;
+  position: absolute;
+  left: calc(50% + 49px);
+  top: 69%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.banner .kefu-right {
+  display: inline-block;
+  text-align: center;
+  font-size: 0.28rem;
+  letter-spacing: 2px;
+  color: #122451;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.63rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 2.2rem;
+  height: 0.6rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fdad06), to(#ffde8c));
+  background-image: linear-gradient(0deg, #fdad06 0%, #ffde8c 100%);
+  border-radius: 0.5rem;
+  line-height: 0.6rem;
+}
+
+.section1 {
+  background: url(../img/section1.jpg) no-repeat 0 0/100%;
+  height: 9.94rem;
+  position: relative;
+  z-index: 0;
+}
+
+.section1 .gameRule {
+  background: url(../img/game_info.png) no-repeat 0 0/100%;
+  position: absolute;
+  left: calc(50% - 3.5rem);
+  top: 3%;
+  font-size: 0.26rem;
+  color: #fff;
+  width: 7rem;
+  height: 3.16rem;
+  text-align: center;
+  line-height: 0.36rem;
+  letter-spacing: 0.05rem;
+  -webkit-filter: drop-shadow(0px 10px 7px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0px 10px 7px rgba(0, 0, 0, 0.7));
+}
+
+.section1 .gameRule h5 {
+  color: #ffd800;
+  font-size: 0.36rem;
+  padding-bottom: 0.2rem;
+}
+
+.section1 .gameRule p {
+  text-align: left;
+}
+
+.section1 .activity-btn1 {
+  position: absolute;
+  top: 56%;
+  left: calc(50% - 70px);
+  position: absolute;
+  bottom: -0.35rem;
+  width: 1.46rem;
+  height: 1.2rem;
+  background: url(../img/ico_start.png) no-repeat 0%/cover;
+  background-position: 0% 0%;
+  z-index: 50;
+  cursor: pointer;
+}
+
+.section1 .gameStage {
+  position: absolute;
+  left: calc(50% - 400px);
+  top: 36%;
+}
+
+.section1 #timebox {
+  position: absolute;
+  left: calc(50% - 308px);
+  top: 28%;
+  font-size: 0.3rem;
+  z-index: 15;
+  display: inline-block;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  /* for Chrome */
+  -moz-user-select: none;
+  /* for Firefox */
+}
+
+.section1 #timebox img {
+  width: 0.4rem;
+  height: 0.82rem;
+}
+
+.section1 .bg {
+  position: absolute;
+  left: calc(50% - 400px);
+  top: 22.5%;
+  width: 800px;
+  height: 600px;
+  display: block;
+  z-index: 0;
+}
+
+.section1 .aim {
+  display: none;
+  position: absolute;
+  left: calc(50% - 43px);
+  top: 54%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ffffff;
+  z-index: 3;
+}
+
+.section1 #bm {
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  top: 32%;
+  left: calc(50% - 220px);
+  -webkit-transform: translate(-5%, -1%);
+  transform: translate(-5%, -1%);
+  z-index: 2;
+}
+
+.section1 canvas {
+  z-index: 10;
+}
+
+.section1 #gameOverBox {
+  position: absolute;
+  left: calc(50% - 400px);
+  top: 22.5%;
+  width: 800px;
+  height: 600px;
+  z-index: 20;
+}
+
+.section1 #gameOverBox .overBox {
+  position: absolute;
+  left: calc(50% - 200px);
+  bottom: 10%;
+  width: 4rem;
+  color: #fff;
+}
+
+.section1 #gameOverBox .overBox .gameOverBoxTitle {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section1 .PopupBoxBtn {
+  border-radius: 0.2rem;
+  padding: 0.1rem;
+  font-size: 0.24rem;
+  width: 1rem;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.section1 .btnLeft {
+  background: #c21747;
+}
+
+.section1 .btnRight {
+  background: #157910;
+}
+
+.section1 .gameBtnBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 4rem;
+  margin: 0 auto;
+}
+
+.section1 #gameSuccessBox {
+  position: absolute;
+  left: calc(50% - 400px);
+  top: 22.5%;
+  width: 800px;
+  height: 600px;
+  z-index: 20;
+}
+
+.section1 #gameSuccessBox .gameSuccessBoxText {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 280px;
+}
+
+.section1 #gameSuccessBox .fireworks {
+  width: 594px;
+  height: 288px;
+  margin: 0 auto 0 auto;
+  z-index: 25;
+}
+
+.section1 .popBg {
+  position: absolute;
+  left: calc(50% - 400px);
+  top: 33%;
+  width: 800px;
+  height: 600px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 35;
+}
+
+.section1 .popBg2 {
+  position: absolute;
+  left: calc(50% - 400px);
+  top: 0%;
+  width: 800px;
+  height: 600px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 35;
+}
+
+.section1 .popMsg {
+  position: absolute;
+  left: calc(50% - 230px);
+  top: 35%;
+  background: url(../img/msg_box.png) no-repeat center;
+  width: 456px;
+  height: 266px;
+  margin: 0 auto;
+  z-index: 36;
+}
+
+.section1 .popMsg .title {
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.section1 .popMsg .msgContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  text-align: center;
+  font-size: 40px;
+  color: #424a4a;
+  margin-top: 60px;
+  line-height: 42px;
+  height: 196px;
+}
+
+.section1 .popMsg .msgContent .msgInfo {
+  text-align: center;
+  width: 250px;
+  margin: 10px auto;
+}
+
+.section1 .popMsg .msgContent .msgBtn {
+  border-radius: 20px;
+  border: 2px solid #b51616;
+  color: #b51616;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 5px 20px;
+  padding: 5px 10px;
+}
+
+.section1 .popMsg .msgContent .msgBtn:hover {
+  border: 2px solid #b51616;
+  color: #fff;
+  background-color: #b51616;
+}
+
+.section1 .popMsg .msgClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.section1 .popMsg .fontRed {
+  color: #b51616;
+}
+
+.section1 .popMsg .fontBold {
+  font-weight: 600;
+}
+
+.section2 {
+  background-color: #aa001b;
+  height: 17.48rem;
+  position: relative;
+}
+
+.section2 .rule-info {
+  position: absolute;
+  left: calc(50% - 3rem);
+  top: 0%;
+  color: #fff;
+  font-size: 0.26rem;
+  line-height: 0.42rem;
+  width: 6.3rem;
+}
+
+.section2 .rule-info h3 {
+  font-size: 0.36rem;
+}
+
+.section2 .rule-info li {
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+.section2 .rule-info table {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #ffffff;
+}
+
+.section2 .rule-info table td {
+  padding: 0.2rem;
+}
+
+.login-main {
+  position: relative;
+  z-index: 99;
+  display: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.login-main .mask-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.72);
+}
+
+.login-main .mask-main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 5.91rem;
+  background-color: #fff;
+  border-radius: 0.1rem;
+  padding: 0.4rem 0.46rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.login-main .mask-main .title {
+  font-size: 0.22rem;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  line-height: 0.24rem;
+}
+
+.login-main .mask-main .title i {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  font-size: 0.18rem;
+  line-height: 0.24rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.login-main .mask-main .title i:active,
+.login-main .mask-main .title i:hover {
+  color: #0f6eef;
+}
+
+.login-main .mask-main .login-from {
+  margin-top: 45px;
+}
+
+.login-main .mask-main .login-from .list {
+  width: 4.98rem;
+  height: 0.54rem;
+  line-height: 0.45rem;
+  background-color: #f3f3f3;
+  border-radius: 0.05rem;
+  color: #7e7e7e;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0.01rem solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.login-main .mask-main .login-from .list .icon {
+  font-size: 0.2rem;
+  margin-left: 0.23rem;
+  float: left;
+}
+
+.login-main .mask-main .login-from .list .input {
+  font-size: 0.2rem;
+  width: 65%;
+  height: 100%;
+  border: 0;
+  float: left;
+  padding-left: 0.27rem;
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  letter-spacing: 0.01rem;
+  color: #7e7e7e;
+}
+
+.login-main .mask-main .login-from .cur {
+  border-color: #97aff6;
+}
+
+.login-main .mask-main .login-from li:first-child .list {
+  margin-top: 0;
+}
+
+.login-main .mask-main .login-from .input-warning {
+  color: #e73838;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-top: 0.01rem;
+  padding-bottom: 0.02rem;
+  height: 0.19rem;
+}
+
+.login-main .mask-main .login-button {
+  width: 4.98rem;
+  height: 0.6rem;
+  line-height: 0.58rem;
+  background-color: #577ff6;
+  border-radius: 0.05rem;
+  font-size: 0.2rem;
+  color: #fff;
+  margin-top: 0.22rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.login-main .mask-main .login-button:active {
+  background-color: #4d67cd;
+}
+
+.login-main .mask-main .login-option {
+  font-size: 0.16rem;
+  margin-top: 0.2rem;
+  overflow: hidden;
+}
+
+.login-main .mask-main .login-option span {
+  color: #577ff6;
+  cursor: pointer;
+}
+
+.login-main .mask-main .login-option span:first-child {
+  float: left;
+}
+
+.login-main .mask-main .login-option span:last-child {
+  float: right;
+}
+
+.login-main .mask-main .canvas {
+  float: right;
+  width: 0.92rem;
+  height: 0.4rem;
+  margin-top: 0.06rem;
+  margin-right: 0.1rem;
+}
+
+.tips_box_1 {
+  position: fixed;
+  left: calc(50% - 135px);
+  top: 40%;
+  border-radius: 0.08rem;
+  z-index: 99;
+  width: 270px;
+  height: 150px;
+  color: #000000;
+  background: url(../img/login_msg_box.png) no-repeat;
+}
+
+.tips_box_1 .close {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.tips_box_1 > p {
+  width: 190px;
+  font-size: 20px;
+  text-align: center;
+  margin: 70px auto;
+}
+
+#idError {
+  font-size: 0.18rem;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    background: url(../img/banner_m.jpg) no-repeat 0/100%;
+    height: 12rem;
+  }
+  .banner .badge {
+    left: calc(50% - 2rem);
+    top: 74%;
+  }
+  .banner .badge::before {
+    content: "";
+    position: absolute;
+    left: -40%;
+    top: -155%;
+    width: 0.5rem;
+    height: 4rem;
+    display: block;
+  }
+  .banner .light {
+    top: 69%;
+    left: calc(50% - 1.2rem);
+  }
+  .banner .bannerTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 5.5rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    left: calc(50% - 150px);
+    top: 11.5%;
+    z-index: 1;
+  }
+  .banner .bannerTop {
+    background: url(../img/people_m.png) no-repeat 0/100%;
+    width: 7.37rem;
+    height: 6.99rem;
+    position: absolute;
+    top: 42%;
+    left: calc(50% - 3.79rem);
+    z-index: 2;
+  }
+  .section1 {
+    background: #aa001b url(../img/section1_m.jpg) no-repeat top/100%;
+    height: 19.5rem;
+  }
+  .section1 .gameRule {
+    background: url(../img/game_info_m.png) no-repeat 0/100%;
+    font-size: 0.36rem;
+    left: calc(50% - 3.25rem);
+    width: 6.5rem;
+    height: 4.06rem;
+    line-height: 0.4rem;
+    margin-top: -0.6rem;
+    -webkit-filter: drop-shadow(0px 10px 7px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(0px 10px 7px rgba(0, 0, 0, 0.7));
+  }
+  .section1 .gameRule h5 {
+    font-size: 0.48rem;
+  }
+  .section1 .activity-btn1 {
+    display: block;
+    top: 50%;
+    left: calc(50% - 1.5rem);
+    width: 2.92rem;
+    height: 2.65rem;
+    background: url(../img/ico_start_m.png) no-repeat 0%/cover;
+    background-position: 0% 0%;
+  }
+  .section1 .popBg3 {
+    position: absolute;
+    left: calc(50% - 3.75rem);
+    top: 22%;
+    width: 7.5rem;
+    height: 12rem;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  .section1 .gameStage {
+    position: absolute;
+    left: calc(50% - 3.75rem);
+    top: 22%;
+  }
+  .section1 #timebox {
+    left: calc(50% - 2.8rem);
+    top: 30%;
+  }
+  .section1 .bg {
+    left: calc(50% - 3.75rem);
+    top: 24.5%;
+    width: 7.5rem;
+    height: 12.6rem;
+    display: block;
+    z-index: 0;
+  }
+  .section1 .aim {
+    display: none;
+    left: calc(50% - 0.6rem);
+    top: 80%;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+  .section1 .PopupBoxBtn {
+    font-size: 0.3rem;
+    width: 1.5rem;
+    letter-spacing: 0.05rem;
+  }
+  .section1 #gameOverBox {
+    position: absolute;
+    left: calc(50% - 3.75rem);
+    top: 24.5%;
+    width: 7.5rem;
+    height: 12.6rem;
+    z-index: 20;
+  }
+  .section1 #gameOverBox .overBox {
+    position: absolute;
+    left: calc(50% - 2.8rem);
+    bottom: 10%;
+    width: 5.5rem;
+    color: #fff;
+  }
+  .section1 #gameOverBox .overBox .gameOverBoxTitle {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .section1 #gameSuccessBox {
+    position: absolute;
+    left: calc(50% - 3.75rem);
+    top: 24.5%;
+    width: 7.5rem;
+    height: 12.6rem;
+    z-index: 20;
+  }
+  .section1 #gameSuccessBox .gameSuccessBoxText {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 5.5rem;
+    margin-bottom: 5.3rem;
+  }
+  .section1 #gameSuccessBox .fireworks {
+    width: 543px;
+    height: 510px;
+    margin: 0 auto 0 auto;
+    z-index: 25;
+  }
+  .section1 .popBg2 {
+    position: absolute;
+    left: calc(50% - 3.75rem);
+    top: 0%;
+    width: 7.5rem;
+    height: 12.6rem;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 35;
+  }
+  .section1 .popMsg {
+    position: absolute;
+    left: calc(50% - 3rem);
+    top: 35%;
+    background: url(../img/msg_box_m.png) no-repeat 0/100%;
+    width: 6rem;
+    height: 3.5rem;
+    margin: 0 auto;
+    z-index: 36;
+  }
+  .section1 .popMsg .title {
+    font-size: 0.48rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0.15rem;
+  }
+  .section1 .popMsg .msgContent {
+    text-align: center;
+    font-size: 0.6rem;
+    color: #424a4a;
+    margin-top: 0.1rem;
+    line-height: 0.6rem;
+    letter-spacing: 0.03rem;
+    height: 2.8rem;
+  }
+  .section1 .popMsg .msgContent .msgInfo {
+    margin-top: 1.5rem;
+    text-align: center;
+    width: 3.2rem;
+    line-height: 0.5rem;
+    letter-spacing: 0.02rem;
+  }
+  .section1 .popMsg .msgContent .msgBtn {
+    border-radius: 0.2rem;
+    border: 2px solid #b51616;
+    color: #b51616;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0.05rem 0.2rem;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.3rem;
+  }
+  .section1 .popMsg .msgClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+  .section1 .popMsg .fontRed {
+    color: #b51616;
+  }
+  .section1 .popMsg .fontBold {
+    font-weight: 600;
+  }
+  .section2 {
+    height: 17.77rem;
+    margin: -1.2rem;
+  }
+  .section2 .rule-info {
+    top: 0;
+  }
+  .login-main .mask-main {
+    width: 92.3%;
+    padding: 0.4rem 0.46rem;
+    height: unset;
+    border-radius: 0.2rem;
+  }
+  .login-main .mask-main .title {
+    font-size: 0.32rem;
+  }
+  .login-main .mask-main .login-from {
+    margin-top: 0.45rem;
+  }
+  .login-main .mask-main .login-from .list {
+    width: 100%;
+    height: 0.9rem;
+    line-height: 0.9rem;
+  }
+  .login-main .mask-main .login-from .list .icon {
+    font-size: 0.3rem;
+    margin-left: 0.23rem;
+  }
+  .login-main .mask-main .login-from .list .input {
+    font-size: 0.26rem;
+    padding-left: 0.27rem;
+  }
+  .login-main .mask-main .login-from .input-warning {
+    color: #e73838;
+    opacity: 0;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    height: 0.34rem;
+    line-height: 0.34rem;
+    margin-top: 1px;
+  }
+  .login-main .mask-main .login-button {
+    width: 100%;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    border-radius: 0.1rem;
+    font-size: 0.3rem;
+    margin-top: 0.22rem;
+  }
+  .login-main .mask-main .login-option {
+    font-size: 0.26rem;
+    margin-top: 0.2rem;
+  }
+  .login-main .mask-main .canvas {
+    float: right;
+    width: 1.5rem;
+    height: 0.7rem;
+    margin-top: 0.07rem;
+    margin-right: 0.1rem;
+  }
+  .tips_box_1 {
+    left: calc(50% - 135px);
+    top: 30%;
+  }
+}
+
+@-webkit-keyframes flashing {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes flashing {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}

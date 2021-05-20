@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>下樓梯</title>
+    <meta name="keywords" content="下樓梯" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />  
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="text/javascript" src="./js/jquery3.3.1.min.js"></script>    
+    <script type="text/javascript" src="./js/ctrl.js"></script>
+</head>
+
+<body>
+<div class="activity-main">   
+    <div class="banner">
+        <a href="javascript:;" class="jsService kefu pc kefu-right" onclick=""
+        sc-attr="buttonClick|page_button:新客活动,first_model:banner,button_name:客服"
+        data-stat="click,kef">客服</a>        
+        <div class="badge"></div>
+        <div class="light"></div>       
+    </div>
+    <div class="section1">        
+        <div class="gameRule">
+            <!-- <h5>游戏规则</h5>           
+            <p>页面上出现不停转动的花圈，点击页面下方的拐杖糖，则拐杖糖会射向花圈上，在规定时间内将拐杖糖发射完毕，且不撞到花圈上的拐杖糖则过关，完成三关即可获得奖励1美金。</p> -->
+        </div>        
+        <a class="activity-btn1 gameStart" data-stat="click,game868">游戏开始</a> 
+        <!-- <div class="popBg" style="display: none;"></div>         -->
+		<div class="PopupBox" id="gameSuccessBox" style="display: none;">
+            <div class="popMsg" style="display: none;">
+                <!-- <div class="msgClose"></div> -->
+                <!-- <h5 class="title">恭喜获得报名资格</h5> -->
+                <div class="msgContent">
+                    <!-- <p class="info3" style="display: none;">获得<span class="fontRed fontBold">奖金1美元</span>与报名资格</p>
+                    <div><p>点击<span class="msgBtn" id="setBtn">下一关</span>
+                                立即享有交易</p></div>                  -->
+                    <div class="msgInfo" style="display: none;">                        
+                        <p><span class="msgCommodity fontRed fontBold total"></span></p>
+                    </div>
+                </div>
+            </div>          
+        </div>
+        <div id="gameStage" class="gameStage"></div>
+        <div class="popBg3"></div> 
+    </div>
+    <div class="section2">        
+        <div class="rule-info">
+            <div class="title">
+                <h3>奖励规则:</h3><br>
+            </div>
+            <ul>      
+                <li>奖励规则：从进入组件开始，完成该关指定产品，交易满足手即可获得后赠；请参照表格</li>               
+                <table class="table" border="1">
+                    <tbody>
+                        <tr style="color:#ffd800;">
+                            <td>獎品</td>
+                            <td>名額</td>
+                            <td>上限</td>                            
+                        </tr>
+                        <tr>                            
+                            <td>APPLE IPhone 13 PLUS 512GB</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>                            
+                            <td>APPLE Ipad 256GB</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>                            
+                            <td>APPLE airpods pro</td>
+                            <td>10</td>
+                            <td>10</td><br>
+                        </tr>
+                    </tbody>
+                </table><br>                
+            </ul>
+            <ul>              
+                <h3>注意事项:</h3><br>                
+            </ul>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="./js/phaser3.5.min.js"></script> 
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
